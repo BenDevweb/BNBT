@@ -1,63 +1,132 @@
   
-    ::before,*::after{box-sizing:border-box}
+    *::before,*::after{box-sizing:border-box}
     html,body{height:100%}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
          background:#f1f3f6; display:grid; place-items:center;}
   
     .card{
-      width:min(980px,96vw);
+      width:min(920px,92vw);
       height:560px;
       border-radius:28px;
       overflow:hidden;
       box-shadow:0 30px 60px rgba(0,0,0,.12);
       display:grid;
       grid-template-columns:320px 1fr;
-      background:linear-gradient(135deg,#DDE3EF,#F0F2FA);
+      background:linear-gradient(135deg,#6d7075,#F0F2FA);
     }
     .sidebar{
-      background:linear-gradient(180deg,#1D212E,#34364A);
+      background:linear-gradient(180deg,#0d0e11,#292a3e);
       color:#fff;
       padding:28px 22px;
       position:relative;
     }
-    .brand{
-      width:84px;height:84px;border-radius:50%;
-      border:3px solid rgba(255,255,255,.35);
-      display:grid;place-items:center;
-      margin:4px 0 26px 6px;
+    .brand {
+    width:84px;
+    height:84px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: row;
+    place-items: center;
+    margin:4px 0 26px 6px;
+    padding-left: 90px;
+}
+    .brand .yin{
+        font-size:6.5rem;
+        font-weight: 700;
+        line-height:1;
+        align-items: center;
+        justify-items: center;
+        display:flex;
+        
     }
-    .brand .yin{font-size:44px;line-height:1}
-    nav ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+    nav ul{
+        list-style:none;
+        margin-top: 60px;
+        padding-left: 30px;
+        display:grid;
+        gap:16px
+    }
     nav a{
-      display:flex;align-items:center;gap:14px;
-      text-decoration:none;color:#e7e9f2;
-      padding:16px 18px;border-radius:14px;
-      background:rgba(255,255,255,0.06);
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:#e7e9f2;
+      padding:16px 18px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
       transition:.25s ease;
       font-weight:500; letter-spacing:.3px;
     }
-    nav a:hover{transform:translateX(6px);background:rgba(255,255,255,.12)}
+    nav a:hover{
+        transform:translateX(6px);
+        background: #e7e9f2;
+        color: #0d0e11;
+        }
     .active a{
-      background:#e9eef7;color:#1e2330;
-      box-shadow:0 8px 20px rgba(0,0,0,.25) inset, 0 8px 24px rgba(0,0,0,.18);
+      
+      color:#e7e9f2;
+      
     }
-    nav i{width:20px;text-align:center;opacity:.9}
+    nav i{
+        width:20px;
+        text-align:center;
+        opacity:.9
+    }
 
     .content{
-      display:grid; place-items:center;
+      display:grid; 
+      place-items:center;
+      justify-content: center;
       padding:32px;
       background:
         radial-gradient(120px 120px at 35% 30%, rgba(0,0,0,.06), transparent 60%),
         linear-gradient(135deg,#E8ECF7,#F6F7FB);
     }
-    .content h1{
-      margin:0; text-align:left;
-      font-size:72px; line-height:.95;
-      letter-spacing:6px; color:#1f2430;
-      text-transform:uppercase;
+    .content h1 {
+      margin-top:120px; 
+      text-align:left;
+      font-size: 20px; 
+      line-height:.95;
+      letter-spacing:6px; 
+      color:#0a0a0a;
+      
     }
-    .content h1 span{display:block;font-weight:800}
+    .content h1 span{
+        display:block;
+        font-size: 34px;
+        font-weight:800;
+    }
+.content-icons {
+  display: grid;
+  place-items: center;
+  justify-content: flex-end;
+  padding-left: 200px;
+  line-height: .95;
+  margin-top: 30px;
+  gap: 15px;
+  font-size: 32px;
+}
+.content-icons i {
+  width: 60px;
+  height: 60px;
+  border: 1 solid #dadce0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.content-icons i:hover{
+   background-color: #dadce0;
+   cursor: pointer;
+  
+  
+  
+}
     
+
     @media (max-width:780px){
       .card{grid-template-columns:1fr; height:auto}
       .content{padding:56px 28px}
