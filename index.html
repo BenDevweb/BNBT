@@ -1,11 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Implementation Sidebar </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sidebar Menu</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+  <div class="card">
     
+    <aside class="sidebar" aria-label="Menu latéral">
+      <div class="brand" aria-hidden="true">
+        <span class="yin">☯</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house"></i> HOME</a></li>
+          <li><a href="#"><i class="fa-regular fa-address-card"></i> ABOUT</a></li>
+          <li class="active"><a href="#"><i class="fa-solid fa-people-group"></i> TEAM</a></li>
+          <li><a href="#"><i class="fa-regular fa-image"></i> PORTFOLIO</a></li>
+          <li><a href="#"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>SIDEBAR <span>MENU</span></h1>
+      <div class="content-icons">
+        
+        <i class="fa-solid fa-maximize"></i>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </main>
+  </div>
+
 </body>
 </html>
