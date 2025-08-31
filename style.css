@@ -111,7 +111,7 @@
 .content-icons i {
   width: 60px;
   height: 60px;
-  border: 1 solid #dadce0;
+ 
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -119,8 +119,9 @@
 
 }
 .content-icons i:hover{
-   background-color: #dadce0;
-   cursor: pointer;
+  background-color: #dadce0;
+  border: 1px solid #dadce0;
+  cursor: pointer;
   
   
   
