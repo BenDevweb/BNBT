@@ -131,7 +131,7 @@
     @media (max-width:780px){
       .card{
         grid-template-columns:1fr; 
-        height:auto
+        height:auto;
       }
 
     .brand {
@@ -140,16 +140,10 @@
   }
 
       nav a{
-      display:flex;
       justify-content: start;
       align-items:center;
-      gap:14px;
-      text-decoration:none;
-      color:#e7e9f2;
-      padding-left: 80px;
-      border-radius: 50px;
-      transition:.25s ease;
-      font-weight:500; letter-spacing:.3px;
+      padding-left: 90px;
+      
       }
        .content{
       display:grid; 
