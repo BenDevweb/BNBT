@@ -151,7 +151,14 @@
       transition:.25s ease;
       font-weight:500; letter-spacing:.3px;
       }
-       .content{
+
+      nav a:hover{
+        transform:translateX(6px);
+        background: #e7e9f2;
+        color: #0d0e11;
+        }
+
+      .content{
       display:grid; 
       place-items:center;
       justify-content: center;
